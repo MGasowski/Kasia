@@ -1,3 +1,5 @@
+import CovidCard from "./CovidCard";
+
 export default function Features() {
     return (
         <div id="features-features-16" title="features/features-16.html">
@@ -11,6 +13,14 @@ export default function Features() {
               </div>
               <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
+                <CovidCard />
+                </div>                 <div class="col-md-6 col-lg-4">
+                <CovidCard />
+                </div> 
+                <div class="col-md-6 col-lg-4">
+
+                <CovidCard />
+{/* 
                   <div class="card hover-shadow-lg hover-translate-y-n10">
                     <div class="px-5 pb-5">
                       <div class="py-5">
@@ -44,7 +54,7 @@ export default function Features() {
                         <a href="#" class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">gulp</a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
-import { default as white } from "../img/brand/logo.png";
+import { default as white } from "../img/brand/logo_black.png";
+import { BsFacebook, BsInstagram, BsGoogle } from 'react-icons/bs';
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -6,13 +7,16 @@ const Footer = () => {
 <footer id="footer-main">
     <div class="footer footer-dark bg-gradient-primary">
       <div class="container">
-        <div class="row pt-md">
-          <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="row pt-md ">
+          <div class="col-lg-5 mb-5 mb-lg-0">
             <a href="index-2.html">
-                <img src={white} alt="Footer logo" style={{height: 70}} />
+                {/* <img src={white} alt="Footer logo" style={{height: 70}} /> */}
+              <h3 class='text-dark font-weight-bold'>Punkt Pobrań</h3>
               </a>
-              <h3>Punkt Pobrań</h3>
-              <p>Lorem ipsum</p>
+              <p>Punkt Pobrań<br />
+ul. Reymonta 3 <br />
+05-120 Legionowo <br />
+ tel. 692332349</p>
 
           </div>
           <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
@@ -29,7 +33,7 @@ const Footer = () => {
             <ul class="list-unstyled text-small">
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Instagram</a></li>
-              <li><a href="#">xxx</a></li>
+              <li><a href="#">Google</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
@@ -51,24 +55,20 @@ const Footer = () => {
             <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
               <li class="nav-item">
                 <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank">
-                  <i class="fab fa-dribbble"></i>
+                  <BsFacebook />
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.instagram.com/webpixelsofficial" target="_blank">
-                  <i class="fab fa-instagram"></i>
+                  <BsInstagram />
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://github.com/webpixels" target="_blank">
-                  <i class="fab fa-github"></i>
+                  <BsGoogle />
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>

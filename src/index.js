@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/purpose.css'
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+import 'swiper/swiper.min.css';
+import 'bootstrap/dist/css/animate.min.css';
+
+
 
 import './index.css';
 import App from './App';

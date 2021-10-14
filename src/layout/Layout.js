@@ -12,9 +12,8 @@ import Shop from '../components/Shop'
 const Layout = ({ children }) => {
   return (
     <Router>
-      {/* <Menu /> */}
       <Test />
-      <main>{children}</main>
+      <main style={{marginTop: 50}}>{children}</main>
       <Footer />
     </Router>
   )

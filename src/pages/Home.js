@@ -1,7 +1,12 @@
 import Features from '../components/Features';
+import Features2 from '../components/Features2';
 import Header from '../components/Header'
 import Meta from '../components/Meta'
+import Packages from '../components/Packages';
 import Shop from '../components/Shop';
+import Spacer from '../components/Spacer';
+import Swiper from '../components/Swiper2';
+import Team from '../components/Team';
 import { default as img } from '../img/backgrounds/img-5.jpg';
 import Landing from './Landing';
 
@@ -12,12 +17,16 @@ const Home = () => {
 
   return (<>
         <Landing />
+        <Spacer />
 
-    <section class="slice slice-lg bg-section-dark" data-offset-top="#header-main" style={{ paddingTop: 147.188 }}>
+        <Features2 />
+        <Packages />
+
+    {/* <section class="slice slice-lg bg-section-dark" data-offset-top="#header-main" style={{ paddingTop: 147.188 }}>
       <div class="bg-absolute-cover bg-size--contain bg-primary d-flex align-items-center">
-        {/* <figure class="w-100">
+         <figure class="w-100">
           <img alt="Image placeholder" src={img} class="svg-inject" />
-        </figure> */}
+        </figure> 
       </div>
       <div class="py-6 py-xl-9">
         <div class="container position-relative zindex-100">
@@ -38,9 +47,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
-          <Features />
+    </section> */}
+    {/* <Team />
+          <Features /> 
     <Shop />
+ <Swiper /> */}
     </>
   )
 }
