@@ -5,9 +5,9 @@ import { Bounce, Slide } from 'react-reveal';
 
 export default function Features2() {
     return (
-        <div class="container-fluid mb-5 mt-0 "  id="onas">
-<section class="slice slice-lg p-0" id="sct-what-we-do">
-      <div class="container">
+        <div class="container-fluid mb-5 mt-0  "  id="onas" >
+<section class="slice slice-lg p-0">
+      <div class="container ">
       <div class="mb-5 text-center">
                 <Bounce>
                 <h3 class=" mt-4 ">O NAS</h3>
@@ -73,6 +73,7 @@ pacjentów wykonuje w pełni wykwalifikowany i doświadczony zespół.</p>
         </div>
         
       </div>
+
     </section>
 {/* 
         <div class="row">

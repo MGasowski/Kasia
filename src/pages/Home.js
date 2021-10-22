@@ -6,21 +6,25 @@ import Packages from '../components/Packages';
 import Shop from '../components/Shop';
 import Spacer from '../components/Spacer';
 import Swiper from '../components/Swiper2';
-import Team from '../components/Team';
+import Team from '../components/TeamSection';
+import Team2 from '../components/Team2';
 import { default as img } from '../img/backgrounds/img-5.jpg';
 import Landing from './Landing';
 
 const Home = () => {
   // page content
-  const pageTitle = 'Home'
-  const pageDescription = 'welcome to react bootstrap template'
+
 
   return (<>
         <Landing />
         <Spacer />
-
         <Features2 />
+        {/* <Team2 /> */}
         <Packages />
+        <Team />
+
+        {/* <Team /> */}
+
 
     {/* <section class="slice slice-lg bg-section-dark" data-offset-top="#header-main" style={{ paddingTop: 147.188 }}>
       <div class="bg-absolute-cover bg-size--contain bg-primary d-flex align-items-center">

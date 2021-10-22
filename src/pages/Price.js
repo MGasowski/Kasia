@@ -22,7 +22,8 @@ const Price = () => {
         
         </div>
     </section>
-
+      <div class="row ">
+        <div class="col-4">
         <Collapse title={"BADANIA KRWI"}>
             <ListItem name={"Morfologia"} price={"13"} />
             <ListItem name={"Rozmaz ręczny"} price={"10"} />
@@ -87,18 +88,158 @@ const Price = () => {
             <ListItem name={"Kalcytonina"} price={"60"} />
             <ListItem name={"Fosfataza kwaśna"} price={"13"} />
         </Collapse>
-        
-        <Collapse title={"HORMONY"}></Collapse>
-        <Collapse title={"MARKERY NOWOTWOROWE"}></Collapse>
-        <Collapse title={"ZAKAŹNOŚĆ"}></Collapse>
-        <Collapse title={"ALERGIE"}></Collapse>
-        <Collapse title={"UKŁAD KRZEPNIĘCIA"}></Collapse>
-        <Collapse title={"BADANIA KAŁU"}></Collapse>
-        <Collapse title={"BAKTERIOLOGIA (POSIEWY)"}></Collapse>
-        <Collapse title={"BADANIA MYKOLOGICZNE ( GRZYBY)"}></Collapse>
-        <Collapse title={"CYTOLOGIA"}></Collapse>   
+        <Collapse title={"ZAKAŹNOŚĆ"}>
+          <ListItem 
+            name={"Koronawirus SARS COV-2 "}
+            price={"118"} 
+            desc={"przeciwciała neutralizujące anty-S (poziom przeciwciał po szczepieniu lub, przebytej infekcji) IgG-"}
+            />
+          <ListItem name={"Kiła"} desc={"WR"} price={"20"} />
+          <ListItem name={"HCV"} desc={"przeciwciała"} price={"38"} />
+          <ListItem name={"HBs"} desc={"antygen"} price={"25"} />
+          <ListItem name={"HBs"} desc={"przeciwciała"} price={"38"} />
+          <ListItem name={"HBc"} desc={"przeciwciała"} price={"60"} />
+          <ListItem name={"HIV"} price={"35"} />
+          <ListItem name={"Toxoplazmoza IgG"} price={"38"} />
+          <ListItem name={"Toxoplazmoza IgM"} price={"38"} />
+          <ListItem name={"Różyczka IgG"} price={"38"} />
+          <ListItem name={"Różyczka IgM"} price={"38"} />
+          <ListItem name={"Cytomegalia IgG"} price={"40"} />
+          <ListItem name={"Cytomegalia IgM"} price={"40"} />
+          <ListItem name={"Mycoplasma pneumoniae IgG"} price={"66"} />
+          <ListItem name={"Mycoplasma pneumoniae IgM"} price={"66"} />
+          <ListItem name={"Chlamydia pneumoniae  IgG"} price={"50"} />
+          <ListItem name={"Chlamydia pneumoniae IgM"} price={"50"} />
+          <ListItem name={"Chlamydia trachomatis IgG"} price={"55"} />
+          <ListItem name={"Chlamydia Trachomatis IgM"} price={"55"} />
+          <ListItem name={"Krztusiec IgG"} price={"55"} />
+          <ListItem name={"Krztusiec IgM"} price={"55"} />
+          <ListItem name={"Ospa IgG"} price={"56"} />
+          <ListItem name={"Ospa IgM"} price={"56"} />
+          <ListItem name={"Borrelia IgG"} price={"50"} />
+          <ListItem name={"Borelia IgM"} price={"50"} />
+        </Collapse>
+        <Collapse title={"BADANIA KAŁU"}>
+        <ListItem name={"Helicobacter pylori test przesiewowy"} price={"38"} />
+        <ListItem name={"Lamblia"} desc={"antygen"} price={"30"} />
+        <ListItem name={"Rota i adenowirus"} desc={"antygen"} price={"30"} />
+        <ListItem name={"Norowirusy"} desc={"antygen"} price={"85"} />
+        <ListItem name={"Pasożyty"} price={"15"} />
+        <ListItem name={"Badanie ogólne/resztki pokarmowe"} price={"21"} />
+        <ListItem name={"Krew utajona"} price={"17"} />
+        <ListItem name={"Kalprotektyna"} price={"150"} />
+        <ListItem name={"Elastaza trzustkowa"} price={"200"} />
+
+        </Collapse>
+        <Collapse title={"CYTOLOGIA"}>
+        <ListItem name={"cytologia ginekologiczna"} price={"45"} />
+        <ListItem name={"cytologia cienkowarstwowa LBC"} price={"90"} />
+        <ListItem name={"p16 i Ki67"} desc={"ekspresja białek"} price={"280"} />
+        <ListItem name={"LBC+Chlamydia trachomatis"} desc={"met.PCR"} price={"190"} />
+        <ListItem name={"LBC+HPV (14 genotypów)+chlamydia trachomatis met. PCR"} price={"250"} />
+        </Collapse> 
+        </div>
+
+        <div class="col-4">
+        <Collapse title={"HORMONY"}>
+          <ListItem name={"TSH"} price={"25"} />
+          <ListItem name={"FT3"} price={"25"} />
+          <ListItem name={"FT4"} price={"25"} />
+          <ListItem name={"T3"} price={"21"} />
+          <ListItem name={"T4"} price={"21"} />
+          <ListItem name={"anty-TPO"} price={"35"} />
+          <ListItem name={"anty-TG"} price={"35"} />
+          <ListItem name={"TRAb"} price={"80"} />
+          <ListItem name={"Tyreoglobulina"} price={"42"} />
+          <ListItem name={"Insulina"} price={"42"} />
+          <ListItem name={"FSH"} price={"30"} />
+          <ListItem name={"LH"} price={"30"} />
+          <ListItem name={"Estradiol"} price={"30"} />
+          <ListItem name={"Progesteron"} price={"30"} />
+          <ListItem name={"Prolaktyna"} price={"30"} />
+          <ListItem name={"beta-HCG"} price={"32"} />
+          <ListItem name={"wolna beta-HCG"} price={"56"} />
+          <ListItem name={"białko PAPP-A"} price={"80"} />
+          <ListItem name={"AMH"} price={"156"} />
+          <ListItem name={"17-OH Progesteron"} price={"39"} />
+          <ListItem name={"DHEA-SO4"} price={"45"} />
+          <ListItem name={"DHEA"} price={"50"} />
+          <ListItem name={"Androstendion"} price={"45"} />
+          <ListItem name={"Testosteron"} price={"30"} />
+          <ListItem name={"Testosteron wolny"} price={"59"} />
+          <ListItem name={"SHBG"} price={"40"} />
+          <ListItem name={"Parathormon"} price={"40"} />
+          <ListItem name={"Kortyzol"} price={"40"} />
+          <ListItem name={"ACTH"} price={"39"} />
+          <ListItem name={"Aldosteron"} price={"50"} />
+          <ListItem name={"Hormon wzrostu"} price={"38"} />
+          <ListItem name={"IGF-1"} price={"70"} />
+          
+        </Collapse>
+        <Collapse title={"ALERGIE"}>
+          <ListItem name={"IgE"} price={"36"} />
+          <ListItem name={"Panel mieszany"} price={"155"} />
+          <ListItem name={"Panel pokarmowy"} price={"155"} />
+          <ListItem name={"Panel oddechowy"} price={"155"} />
+
+        </Collapse>
+        <Collapse title={"BAKTERIOLOGIA (POSIEWY)"}>
+        <ListItem name={"mocz"} price={"38"} />
+        <ListItem name={"wymaz z gardła/migdałków"} price={"40"} />
+        <ListItem name={"wymaz z nosa"} price={"40"} />
+        <ListItem name={"wymaz z języka"} price={"40"} />
+        <ListItem name={"plwocina"} price={"50"} />
+        <ListItem name={"stopień czystości pochwy"} desc={"biocenoza"} price={"-"} />
+        <ListItem name={"wymaz z pochwy"} price={"40"} />
+        <ListItem name={"wymaz  kanału szyjki macicy"} price={"45"} />
+        <ListItem name={"wymaz z pochwy i odbytu GBS"} price={"40"} />
+        <ListItem name={"Kał"} price={"55"} />
+
+        </Collapse>
+        </div>
+
+        <div class="col-4">
+        <Collapse title={"MARKERY NOWOTWOROWE"}>
+          <ListItem name={"PSA"} price={"38"} />
+          <ListItem name={"test ROMA"} desc={"Ca125+HE4+ROMA"} price={"130"} />
+          <ListItem name={"HE4"} price={"50"} />
+          <ListItem name={"Ca125"} price={"39"} />
+          <ListItem name={"CEA"} price={"40"} />
+          <ListItem name={"AFP"} price={"45"} />
+          <ListItem name={"Ca 19-9"} price={"39"} />
+          <ListItem name={"Ca72-4"} price={"60"} />
+          <ListItem name={"beta 2-mikroglobulina"} price={"60"} />
+          <ListItem name={"Ca15-3"} price={"39"} />
+          <ListItem name={"BRCA1"} price={"300"} />
+          <ListItem name={"S100"} price={"48"} />
+        </Collapse>
+        <Collapse title={"UKŁAD KRZEPNIĘCIA"}>
+        <ListItem name={"Antytrombina III"} price={"50"} />
+        <ListItem name={"Białko C"} price={"85"} />
+        <ListItem name={"Białko S"} price={"85"} />
+        <ListItem name={"Czynnik V Leidena"} price={"200"} />
+
+        </Collapse>
+        <Collapse title={"BADANIA MYKOLOGICZNE ( GRZYBY)"}>
+        <ListItem name={"mocz"} price={"45"} />
+        <ListItem name={"wymaz z gardła/migdałków"} price={"42"} />
+        <ListItem name={"kał"} price={"55"} />
+        <ListItem name={"plwocina"} price={"50"} />
+        <ListItem name={"nasienie"} price={"42"} />
+        <ListItem name={"wymaz z pochwy"} price={"42"} />
+
+        </Collapse>
+        </div>
 
         </div>
+
+        <Collapse title={"Pakiety"} color="dark" center open>
+        <ListItem name={"Morfologia"} price={"13"} />
+
+        </Collapse>
+
+        </div>
+
     );
 }
 

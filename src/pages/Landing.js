@@ -1,4 +1,5 @@
 import { default as doc } from '../img/backgrounds/doctor4.jpg';
+import {default as team} from '../img/team/HG0A6560.jpg';
 import { Fade } from 'react-reveal';
 
 export default function Landing() {
@@ -6,7 +7,7 @@ export default function Landing() {
         <div class="page-header" style={{position: 'relative', minHeight: "75vh", overflow: "hidden"}}>
 
             <div class="oblique position-absolute top-0 d-md-block h-100 d-none gradient-custom-10 " style={{borderRadius:0}}>
-            <div class="img-oblique position-absolute fixed-top ms-auto" style={{width: "120%", height: "100%", zIndex: 123,  backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "150px 30%", "background-image": `url(${doc})`, marginLeft: "-4.1rem !important", backgroundColor: "transparent" }}>
+            <div class="img-oblique position-absolute fixed-top ms-auto" style={{width: "120%", height: "100%", zIndex: 123,  backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "0 30%", "background-image": `url(${team})`, marginLeft: "-4.1rem !important", backgroundColor: "transparent" }}>
                 </div>
             </div>
 
@@ -23,13 +24,6 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-                {/* <div class="w-100 position-absolute center bottom-0">
-        <div class="p-5 bg-primary">
-            <a href="" class="tongue tongue-top bottom-0">
-                <i class="fas fa-angle-up"></i>
-            </a>
-        </div>
-    </div> */}
         </div>
 
         </Fade>
