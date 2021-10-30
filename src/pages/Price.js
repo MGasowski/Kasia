@@ -1,8 +1,12 @@
+import Card from '../components/Card';
+import CardCompare from '../components/CardComp';
+import Carousel from '../components/Carousel';
 import Collapse from "../components/Collapse";
+import Compare from "../components/Compare";
 import ListItem from "../components/list-item";
 
 const Price = () => {
-    return (
+    return (<>
         <div class="container mb-5">
            
     <section class="slice slice-lg">
@@ -16,14 +20,14 @@ const Price = () => {
             <p class="lead lh-180">Podany na stronie cennik zawiera ceny badań
                 podstawowych i pakietów. W celu uzyskania
                 informacji o cenach badań specjalistycznych
-                prosimy o kontakt telefoniczny 692332349.</p>
+                prosimy o kontakt telefoniczny <a href="tel:692332349">692 332 349</a>.</p>
           </div>
         </div>
         
         </div>
     </section>
       <div class="row ">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
         <Collapse title={"BADANIA KRWI"}>
             <ListItem name={"Morfologia"} price={"13"} />
             <ListItem name={"Rozmaz ręczny"} price={"10"} />
@@ -140,7 +144,7 @@ const Price = () => {
         </Collapse> 
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-4">
         <Collapse title={"HORMONY"}>
           <ListItem name={"TSH"} price={"25"} />
           <ListItem name={"FT3"} price={"25"} />
@@ -198,7 +202,7 @@ const Price = () => {
         </Collapse>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-4">
         <Collapse title={"MARKERY NOWOTWOROWE"}>
           <ListItem name={"PSA"} price={"38"} />
           <ListItem name={"test ROMA"} desc={"Ca125+HE4+ROMA"} price={"130"} />
@@ -233,13 +237,10 @@ const Price = () => {
 
         </div>
 
-        <Collapse title={"Pakiety"} color="dark" center open>
-        <ListItem name={"Morfologia"} price={"13"} />
 
-        </Collapse>
-
+        
         </div>
-
+</>
     );
 }
 

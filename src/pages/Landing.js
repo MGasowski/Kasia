@@ -1,16 +1,17 @@
 import { default as doc } from '../img/backgrounds/doctor4.jpg';
 import {default as team} from '../img/team/HG0A6560.jpg';
-import { Fade } from 'react-reveal';
+import { Bounce, Fade, Roll } from 'react-reveal';
 
 export default function Landing() {
-    return (<Fade>
+    return (
+        <div>
+
         <div class="page-header" style={{position: 'relative', minHeight: "75vh", overflow: "hidden"}}>
 
-            <div class="oblique position-absolute top-0 d-md-block h-100 d-none gradient-custom-10 " style={{borderRadius:0}}>
+            <div class="oblique  position-absolute top-0 d-md-block h-100 d-none gradient-custom-10 " style={{borderRadius:0}}>
             <div class="img-oblique position-absolute fixed-top ms-auto" style={{width: "120%", height: "100%", zIndex: 123,  backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "0 30%", "background-image": `url(${team})`, marginLeft: "-4.1rem !important", backgroundColor: "transparent" }}>
                 </div>
             </div>
-
 
             <div class="container  ">
                 <div class="row pt-5">
@@ -22,10 +23,12 @@ export default function Landing() {
                             <a href="#!" type="button" class="btn  btn-link btn-lg mt-4 ripple-surface"   style={{ minWidth: "auto" }}>Pakiety</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div>            
 
-        </Fade>
+            </div>
+
+        </div>
+        </div>        
+
     );
 }

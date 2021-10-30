@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   return (
     <Router>
       <Test />
-      <main style={{marginTop: 50}}>{children}</main>
+      <main style={{marginTop: 50, overflowX: 'hidden'}}>{children}</main>
       <Footer />
     </Router>
   )

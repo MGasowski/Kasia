@@ -10,6 +10,7 @@ import Team from '../components/TeamSection';
 import Team2 from '../components/Team2';
 import { default as img } from '../img/backgrounds/img-5.jpg';
 import Landing from './Landing';
+import Compare from '../components/Compare';
 
 const Home = () => {
   // page content
@@ -22,7 +23,6 @@ const Home = () => {
         {/* <Team2 /> */}
         <Packages />
         <Team />
-
         {/* <Team /> */}
 
 

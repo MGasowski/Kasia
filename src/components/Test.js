@@ -46,7 +46,7 @@ export default function Test() {
             <div class="container px-lg-0">
                
         <Link to="/" class="navbar-brand mr-lg-5 "  onClick={()=> setState('home')}>
-                    <img alt="Image placeholder" src={dark} id="navbar-logo" style={{ filter:"grayscale(100%)", height: 50, marginRight: 10 }} />
+                    <img alt="placeholder" src={dark} id="navbar-logo" style={{ filter:"grayscale(100%)", height: 50, marginRight: 10 }} />
                 <span className="text-primary font-weight-bold">Punkt Pobrań</span>
 
                 </Link>
@@ -60,7 +60,7 @@ export default function Test() {
                         </li>
                         
             <li class="nav-item ">
-            <Link to="/cennik" className={`nav-link ${state === 'price'? 'active' : ''}`} onClick={()=> {setState('price'); setTitle("Cennik")}}>Cennik</Link>
+            <Link to="/pakiety" className={`nav-link ${state === 'packages'? 'active' : ''}`} onClick={()=> {setState('packages'); setTitle("Pakiety")}}>Pakiety</Link>
             </li>
             <li class="nav-item ">
             <Link to="/oferta" className={`nav-link ${state === 'features'? 'active' : ''}`} onClick={()=> {setState('features'); setTitle("Oferta")}}>Oferta</Link>
@@ -68,9 +68,9 @@ export default function Test() {
                     </ul>
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
             <li class="nav-item">
-                <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-primary btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="left" title="" data-original-title="Go to Bootstrap Themes">
-                <span class="btn-inner--text">Cennik</span>
-              </a>
+              <Link to="/cennik">
+                <span class="btn btn-primary rounded-pill">Cennik</span>
+                </Link>
              </li>           
           </ul>
 

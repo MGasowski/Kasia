@@ -1,5 +1,7 @@
 import { Fade } from 'react-reveal';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { BsArrowBarRight } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
 
 const Packages = () => {
     return (<>
@@ -13,17 +15,15 @@ const Packages = () => {
           </div>
 
 
-        <div className="">
-        <div class="alert alert-modern  alert-success animated infinite pulse slow" style={{width:"30%"}}>
-    
-    <span class="badge badge-warning badge-pill ">
-        Nowość
-    </span>
-      <span class="alert-content">Więcej pakietów znajdziesz tutaj!</span>
-    </div>
+        
         </div>
+        <div className=" text-primary text-center w-md-25 w-25 " style={{width: ""}}>
+          <Link to="/cennik">
+        <div class="alert alert-success fade show animated infinite pulse " >
+  <strong>Nowość!</strong> Więcej pakietów znajdziesz <strong>tutaj</strong>!
+</div>
+</Link>
         </div>
-
         <div class="pricing card-group flex-column flex-md-row" >
           
           
