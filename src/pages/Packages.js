@@ -3,11 +3,11 @@ import CardCompare from '../components/CardComp';
 
 export default function Packages() {
     return (<>
-        <div class="mb-5 text-center mt-5">
-          <span class="badge badge-soft-success badge-pill badge-lg">
+        <div className="mb-5 text-center mt-5">
+          <span className="badge badge-soft-success badge-pill badge-lg">
             Pakiety
           </span>
-          <h3 class=" mt-4">Pakiety</h3>
+          <h3 className=" mt-4">Pakiety</h3>
           
         </div>
 
@@ -16,7 +16,7 @@ export default function Packages() {
         
         <div className="container-fluid w-75">
           
-        <div class="card-columns">
+        <div className="card-columns">
         <Card 
           name="ALERGICZNY"
           price="199 zł"
