@@ -5,8 +5,8 @@ import "../css/autohide.css";
 import { default as dark } from "../img/brand/logo.png";
 import { useLocation } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
-import MobileMenu from "./MobileMenu";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
+import MobileMenu from "./MobileMenu";
 
 const autohide = () => {
   const el_autohide = document.querySelector(".autohide");
@@ -51,10 +51,9 @@ export default function Navbar() {
       <Helmet>
         <title>Punkt Pobrań - {title}</title>{" "}
       </Helmet>
-      <MobileMenu />
       <nav
-        className="autohide navbar navbar-main  navbar-expand-lg border-bottom shadow-lg navbar-transparent navbar-light bg-white position-fixed top-0"
-        style={{ width: "100%" }}
+        className="autohide navbar navbar-main  navbar-expand-lg border-bottom shadow-lg navbar-transparent navbar-light bg-white position-fixed top-0 d-flex flex-nowrap"
+        style={{ width: "100%", zIndex: 124 }}
         id="navbar-main"
       >
         <div className="container px-lg-0">
@@ -166,7 +165,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <button
+        {/* <button
           class="navbar-toggler toggler-example mr-4"
           type="button"
           data-toggle="collapse"
@@ -176,10 +175,69 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span class="dark-blue-text">
-            <HiMenu size={"1.5rem"} onClick={handleOpen} />
+            <HiMenu size={"1.6rem"} onClick={handleOpen} />
           </span>
-        </button>
+        </button> */}
+        <MobileMenu />
       </nav>
+      <div
+        className={`${
+          open ? "d-flex" : "d-none"
+        }  container bg-primary position-fixed left-0 top-0`}
+        style={{ height: "100vh", zIndex: 123, marginTop: 60 }}
+      >
+        <ul className="navbar-nav align-items-lg-center">
+          <li className="nav-item ">
+            <Link
+              to="/"
+              className={`nav-link ${state === "/" ? "active" : ""}`}
+              onClick={() => {
+                setState("/");
+                setTitle("Strona Główna");
+              }}
+            >
+              Strona Główna
+            </Link>
+          </li>
+
+          <li className="nav-item ">
+            <Link
+              to="/pakiety"
+              className={`nav-link ${state === "/pakiety" ? "active" : ""}`}
+              onClick={() => {
+                setState("/pakiety");
+                setTitle("Pakiety");
+              }}
+            >
+              Pakiety
+            </Link>
+          </li>
+          <li className="nav-item ">
+            <Link
+              to="/oferta"
+              className={`nav-link ${state === "/oferta" ? "active" : ""}`}
+              onClick={() => {
+                setState("/oferta");
+                setTitle("Oferta");
+              }}
+            >
+              Oferta
+            </Link>
+          </li>
+          <li className="nav-item ">
+            <Link
+              to="/kontakt"
+              className={`nav-link ${state === "/kontakt" ? "active" : ""}`}
+              onClick={() => {
+                setState("/kontakt");
+                setTitle("Kontakt");
+              }}
+            >
+              Kontakt
+            </Link>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }
