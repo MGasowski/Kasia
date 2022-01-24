@@ -46,14 +46,14 @@ export default function Landing() {
               >
                 Diagnostyka Laboratoryjna
               </h2>
-              <p
+              {/* <p
                 className="mt-1 pe-lg-5 me-lg-5 lead fw-normal text-muted"
                 data-builder-edit="text"
                 data-builder-name="text3"
               >
                 The time is now for it to be okay to be great. People in this
                 world shun people for being nice.
-              </p>
+              </p> */}
               <div className="buttons">
                 {" "}
                 <Link
